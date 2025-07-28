@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dear Stray Kids</title>
+</head>
+<body>
+  <center>
+  <h1>For Stray Kids 💙</h1>
+   <img src="https://i.pinimg.com/736x/04/3a/cf/043acf1e02b6cda8e7018bf1272b973c.jpg" alt="straykidsaltogetherphoto" >
+  </center> 
+  <h2>
+  <p>
+    This is a special letter written with love for all 8 of you — Bang Chan, Lee Know, Changbin, Hyunjin, Han, Felix, Seungmin, and I.N.
+  </p>
+  </h2>
+  
+    <hr>
+  <h3>To access your personal page, please enter your password below:</h3>
+  <input type="password" id="password" placeholder="Enter your password">
+  <button onclick="goToPage()">Enter</button>
+
+  <script>
+    function goToPage() {
+      const password = document.getElementById("password").value;
+      const accessMap = {
+        "2/9": "bangchanpage2.html",
+        "3/9": "leeknowpage3.html",
+        "4/9": "changbinpage4.html",
+        "5/9": "hyunjinpage5.html",
+        "6/9": "hanpage6.html",
+        "7/9": "felixpage7.html",
+        "8/9": "seungminpage8.html",
+        "9/9": "i_npage9.html"
+      };
+      if (accessMap[password]) {
+        sessionStorage.setItem("access", password);
+        window.location.href = accessMap[password];
+      } else {
+        alert("Wrong password");
+      }
+    }
+  </script>
+</body>
+</html>
