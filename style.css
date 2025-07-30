@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* Центровка основного блока */
   .wrapper {
@@ -17,7 +17,7 @@
 
 /* Заголовок */
   .wrapper h2 {
-  font-family: 'Pacifico', cursive;
-  margin-top: 10px;
-  font-size: 24px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 26px;
+  font-weight: 400;
 }
